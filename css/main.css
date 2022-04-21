@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf")
+}
+
+@font-face{
+    font-family: "Francois One";
+    src: url("../fonts/FrancoisOne.ttf")
+}
+
+@font-face{
+    font-family:"Raleway";
+    src: url("../fonts/Raleway-Regular.ttf")
+}
+
+.center-content{
+    max-width: 1180px;
+    margin: auto;
+}
+
+body{
+    margin: 0px;
+    border: none;
+}
+
+body,html{
+    /**/
+    height: 100%;
+}
+
+h3, h4 {
+    font-family: 'Francois One', sans-serif;
+}
+
+p.paragraph{
+    font-family: "Lato", sans-serif;
+    color: #000;
+    text-align: justify;
+}
+
+a.a {
+    font-family: 'Francois One', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    transition: all .5s ease;
+    font-size: 18.5px;
+}
+
+a.a:hover{
+    background-color: white;
+    color: #5fcb91;
+}
+
+section.grid{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+div.side-by-side{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.grid h3{
+    background-color: #486A36;
+    font-weight: 200;
+    letter-spacing: 1px;    
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+section#fujisawa-sst h3{
+    color: green;
+}
+
+.box{
+    flex: 1;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+}
+
+.box h4{
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1; 
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
+}
+
+div#navbar {
+    background-color: #65AE6C;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+div#navbar a {
+    flex-basis: 20%;
+}
+
+header{
+    height: 100%;
+}
+
+.image-header{
+    
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+}
+
+.home{
+    background-image: url("../images/homepage.jpg");
+}
+
+.contato{
+    background-image: url("../images/contato.jpg");
+}
+
+.cidade{
+    background-image: url("../images/exemplo.jpg");
+}
+
+.fujisawa{
+    background-image: url("../images/fujisawa_sst.jpg")
+}
+
+div#text-header{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;   
+}
+
+div#text-header span{
+    background-color: #111; 
+    color: white;
+    font-family: "Raleway", sans-serif;
+    padding: 20px;
+    font-size: 25px;
+    letter-spacing: 7px;
+}
+
+section#fujisawa-sst{  
+    background-color: #f1f1f1;
+}
+
+section#fujisawa-sst h3{
+    background-color: transparent;
+}
+
+div#texto {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+div#texto h3{
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.same-size h3{
+    width: 80px;
+}
+
+div#imagem {
+    flex: 1;
+    overflow: hidden;
+}
+
+div#imagem img{
+    width: 100%; 
+    height: auto;
+}
+
+footer {
+    height: 130px;
+    background-color: #7bb35d;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    justify-content: space-between;   
+}
+
+footer a{
+    background-color: #486A36;
+}
+
+footer p{
+    color: #FFF;
+    font-family: "Lato", sans-serif;
+}
+
+#contato{
+    text-align: center;
+}
+
+div#contato form{
+    height: 250px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 50px 300px;
+}
+
+div#contato p{
+    font-family: "Lato", sans-serif;
+    color: #777;    
+}
+
+form input, textarea{
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+form button{
+    font-family: 'Francois One', sans-serif;
+    font-size: 18px;
+    background-color: #486A36;
+    padding: 10px;
+    transition: all .5s ease;
+}
+
+form button:hover{
+    background-color: #777;
+    color: #FFF;
+}
+
+div#texto-cidades{
+    padding: 50px 100px;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    background-color: #f1f1f1;
+}

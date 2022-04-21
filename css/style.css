@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+div#bar{
+    position: fixed;
+    width: 100%;
+    z-index: 1; 
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
+}
+
+div#navbar {
+    background-color: #41c17d;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+div#navbar a {
+    flex-basis: 20%;
+}
+
+div#header{
+    height: 100%;
+}
+
+.image-header{
+    background-image: url("../images/imagem_header.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+}
+
+div#text-header{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;   
+}
+
+div#text-header span{
+    background-color: #111; 
+    color: white;
+    font-family: "Raleway", sans-serif;
+    padding: 25px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+div#fujisawa-sst{  
+    background-color: #f1f1f1;
+}
+
+div#fujisawa-sst h3{
+    background-color: transparent;
+}
+
+div#texto {
+    flex: 1;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+div#texto h3{
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.same-size h3{
+    width: 80px;
+}
+
+div#imagem {
+    flex: 1;
+    overflow: hidden;
+}
+
+div#imagem img{
+    width: 100%; 
+    height: auto;
+}
+
+div#footer {
+    height: 130px;
+    background-color: #41c17d;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    justify-content: space-between;   
+}
+
+div#footer a{
+    background-color: #236a44;
+}
+
+div#footer p{
+    color: #FFF;
+    font-family: "Lato", sans-serif;
+}

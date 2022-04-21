@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/ico_contato.ico" type="image/x-icon" />
+    <title>Contato</title>    
+    <script type="text/javascript">  
+        function sendmail(){
+            alert('Enviado com sucesso!');
+            document.location='contato.html';
+        }
+    </script>
+    
+</head>
+
+<body>
+     <nav>
+        <div id="navbar">
+            <a class="a" href="index.html"+>PÁGINA INICIAL</a>
+            <a class="a" href="cidades.html">CIDADES EXEMPLOS</a>
+            <a class="a" href="contato.html">CONTATO</a>
+        </div>
+    </nav>
+    
+    <header>   
+        <div class="image-header contato">
+            <div id="text-header">
+                <span>Contate-nos</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="contato" class="center-content">
+        <h3>Iamos adorar ter seu <i>feedback</i></h3>
+        <p>São Paulo, SP</p>
+        <p>Telefone: 5555-5555</p>
+        <p>Email: exemplo@gmail.com</p>
+        
+        <form onSubmit="sendmail()" method="post" name="form_contato">
+            <input type="text" name="nome" placeholder="Nome">
+            <input type="text" name="email" placeholder="Email">
+            <textarea name="messagem" placeholder="Mensagem"></textarea>
+            <button type="submit" class="button">ENVIAR</button>
+        </form>
+    </div>
+    
+    
+   <footer id="footer">
+        <a href="#top" class="a">Ir para o topo</a>
+        <p>Site desenvolvido para a conslusão da Adap do primeiro semestre de CC.</p>
+    </footer>
+</body>
+</html>
